@@ -1,4 +1,4 @@
-module.exports = (sequelize, Sequelize) => {
+/* module.exports = (sequelize, Sequelize) => {
 
   const userSequelize =  sequelize.init({
     name: {
@@ -17,11 +17,11 @@ module.exports = (sequelize, Sequelize) => {
 
   return userSequelize;
 
-};
+}; */
 
 //POSTGRES
 
-/* const { Model } = require('sequelize'); 
+const { Model } = require('sequelize'); 
  
  module.exports = (sequelize, Sequelize) => {
 
@@ -58,7 +58,7 @@ module.exports = (sequelize, Sequelize) => {
   );
   
   return userSequelize;
-}; */
+};
 
 
 //CORE SQL

@@ -6,7 +6,7 @@
   }; */
 
 //MySQL
-module.exports = {
+/* module.exports = {
   HOST: "localhost",
   USER: "root",
   PASSWORD: "root",
@@ -18,12 +18,13 @@ module.exports = {
     acquire: 30000,
     idle: 10000
   }
-};
+}; */
 
 //Postgres
-/* module.exports = {
+module.exports = {
   HOST: "localhost",
-  USER: "postgres",
+  //USER: "postgres",
+  USER: "root",
   PASSWORD: "root",
   DB: "test_postgres",
   dialect: "postgres",
@@ -34,4 +35,4 @@ module.exports = {
     acquire: 30000,
     idle: 10000
   }
-}; */
+};
