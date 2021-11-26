@@ -58,9 +58,20 @@ exports.create = (req, res) => {
       });
     }); */
 
+    Model.findAll()
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      res.status(500).send({
+        message:
+          err.message || "Some error occurred while retrieving tutorials."
+      });
+    });
+
     //-------------------------
     //await Model.findAll({
-    Model.findAll({
+    /* Model.findAll({
           include: [
             {
               model: roleModel
@@ -77,7 +88,7 @@ exports.create = (req, res) => {
         message:
           err.message || "Some error occurred while retrieving tutorials."
       });
-    });
+    }); */
 
 };
 

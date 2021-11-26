@@ -23,12 +23,12 @@
 //Postgres
 module.exports = {
   HOST: "localhost",
-  //USER: "postgres",
-  USER: "root",
+  USER: "postgres",
+  //USER: "root",
   PASSWORD: "root",
   DB: "test_postgres",
   dialect: "postgres",
-  port: "5432",
+  //port: "5432",
   pool: {
     max: 5,
     min: 0,

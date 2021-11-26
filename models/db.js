@@ -15,9 +15,11 @@ const dbConfig = require("./db.config");
 
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
-  host: dbConfig.HOST,
+  host: process.env.POSTGRES_DB || dbConfig.HOST,
+ // host: dbConfig.HOST,
   dialect: dbConfig.dialect,
-  operatorsAliases: false,
+  operatorsAliases: 0,
+  //operatorsAliases: false,
   logging: false,
   pool: {
     max: dbConfig.pool.max,
